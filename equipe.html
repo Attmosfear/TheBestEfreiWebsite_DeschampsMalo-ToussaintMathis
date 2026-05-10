@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Équipe pédagogique — Département Informatique EFREI</title>
+<meta name="description" content="Enseignants-chercheurs, intervenants et chercheurs du département Informatique de l'EFREI Paris.">
+<link rel="stylesheet" href="styles.css">
+<script>(function(){var s=localStorage.getItem('efrei-theme');if(s==='dark')document.documentElement.classList.add('is-dark-pre');}());</script>
+</head>
+<body>
+
+<a class="skip-nav" href="#main">Aller au contenu</a>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a href="index.html" class="brand">
+      <img src="ImageEfrei/Logo-Efrei-Noir-1.png" alt="EFREI Paris" class="brand__logo">
+      <span class="brand__sub">/ département informatique</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <a href="index.html" class="nav__link">Accueil</a>
+      <a href="formations.html" class="nav__link">Formations</a>
+      <a href="equipe.html" class="nav__link is-active">Équipe</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+      <a href="a-propos.html" class="nav__link">À propos</a>
+      <a href="contact.html" class="nav__cta">candidater →</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Basculer le mode d'affichage" title="Mode sombre / clair">
+      <span class="theme-toggle__icon">[●]</span>
+      <span class="theme-toggle__label">dark</span>
+    </button>
+    <button class="burger" id="burger" aria-controls="nav" aria-expanded="false">[ menu ]</button>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="page-head">
+  <div class="container page-head__inner">
+    <p class="page-head__breadcrumb">
+      <a href="index.html">~</a> <span class="sep">/</span> <span>equipe</span>
+    </p>
+    <h1 class="page-head__title">Équipe pédagogique<span class="accent">.</span></h1>
+    <p class="page-head__lead">
+      40+ enseignants-chercheurs et intervenants industriels. Cliquez sur un profil pour explorer son domaine d'expertise et ses publications.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div class="team-tools" data-reveal>
+      <label class="search">
+        <input type="search" id="team-search" placeholder="rechercher un enseignant…" aria-label="Rechercher un enseignant">
+      </label>
+      <div class="filters" style="margin:0;padding:0;border:none;" id="team-filters" role="tablist" aria-label="Filtrer par domaine">
+        <button class="filter-chip is-active" data-domain="all">tous</button>
+        <button class="filter-chip" data-domain="ia">IA &amp; Data</button>
+        <button class="filter-chip" data-domain="cyber">Cybersécurité</button>
+        <button class="filter-chip" data-domain="se">Génie logiciel</button>
+      </div>
+    </div>
+
+    <div class="team-grid" id="team-grid" data-reveal>
+
+      <article class="team-card" data-name="Khodor Hammoud" data-domain="ia">
+        <div class="team-card__photo"><img src="team-avatars/hammoud.svg" alt="Portrait de Khodor Hammoud"></div>
+        <h3 class="team-card__name">Khodor Hammoud</h3>
+        <p class="team-card__role">// Data Engineering</p>
+        <p class="team-card__bio">Responsable de la majeure Data Engineering. Spécialiste des architectures data à grande échelle et des pipelines de traitement distribué.</p>
+        <div class="team-card__tags"><span class="tag">data-engineering</span><span class="tag">big-data</span></div>
+      </article>
+
+      <article class="team-card" data-name="Mohamad Ghassany" data-domain="ia">
+        <div class="team-card__photo"><img src="team-avatars/ghassany.svg" alt="Portrait de Mohamad Ghassany"></div>
+        <h3 class="team-card__name">Mohamad Ghassany</h3>
+        <p class="team-card__role">// Data &amp; Intelligence Artificielle</p>
+        <p class="team-card__bio">Responsable de la majeure Data &amp; AI. Recherche en apprentissage automatique et systèmes d'information intelligents.</p>
+        <div class="team-card__tags"><span class="tag">machine-learning</span><span class="tag">data-science</span></div>
+      </article>
+
+      <article class="team-card" data-name="Ilyes Jenhani" data-domain="se">
+        <div class="team-card__photo"><img src="team-avatars/jenhani.svg" alt="Portrait de Ilyes Jenhani"></div>
+        <h3 class="team-card__name">Ilyes Jenhani</h3>
+        <p class="team-card__role">// Software Engineering</p>
+        <p class="team-card__bio">Responsable de la majeure Software Engineering. Expert en ingénierie logicielle, architectures distribuées et méthodes agiles.</p>
+        <div class="team-card__tags"><span class="tag">architecture</span><span class="tag">agile</span></div>
+      </article>
+
+      <article class="team-card" data-name="Malika Charrad" data-domain="ia">
+        <div class="team-card__photo"><img src="team-avatars/charrad.svg" alt="Portrait de Malika Charrad"></div>
+        <h3 class="team-card__name">Malika Charrad</h3>
+        <p class="team-card__role">// Data &amp; IA</p>
+        <p class="team-card__bio">Enseignante-chercheuse spécialisée en fouille de données et apprentissage automatique. Travaux en clustering et classification.</p>
+        <div class="team-card__tags"><span class="tag">data-mining</span><span class="tag">ml</span></div>
+      </article>
+
+      <article class="team-card" data-name="Mourad Kmimech" data-domain="se">
+        <div class="team-card__photo"><img src="team-avatars/kmimech.svg" alt="Portrait de Mourad Kmimech"></div>
+        <h3 class="team-card__name">Mourad Kmimech</h3>
+        <p class="team-card__role">// Informatique</p>
+        <p class="team-card__bio">Enseignant-chercheur en informatique. Travaux en bases de données, systèmes d'information et intelligence artificielle appliquée.</p>
+        <div class="team-card__tags"><span class="tag">bases-de-données</span><span class="tag">SI</span></div>
+      </article>
+
+      <article class="team-card" data-name="Ralph Bou Nader" data-domain="cyber">
+        <div class="team-card__photo"><img src="team-avatars/bou-nader.svg" alt="Portrait de Ralph Bou Nader"></div>
+        <h3 class="team-card__name">Ralph Bou Nader</h3>
+        <p class="team-card__role">// Sécurité numérique</p>
+        <p class="team-card__bio">Responsable de la majeure Data Engineering axe Sécurité. Expert en sécurité des données et protection des systèmes d'information.</p>
+        <div class="team-card__tags"><span class="tag">data-security</span><span class="tag">SI</span></div>
+      </article>
+
+      <article class="team-card" data-name="Boussad Ait Salem" data-domain="cyber">
+        <div class="team-card__photo"><img src="team-avatars/ait-salem.svg" alt="Portrait de Boussad Ait Salem"></div>
+        <h3 class="team-card__name">Boussad Ait Salem</h3>
+        <p class="team-card__role">// Cybersécurité &amp; Cloud</p>
+        <p class="team-card__bio">Responsable du pôle Cybersécurité &amp; Cloud. Expertise en sécurité des infrastructures cloud et architectures résilientes.</p>
+        <div class="team-card__tags"><span class="tag">cloud-security</span><span class="tag">pentest</span></div>
+      </article>
+
+      <article class="team-card" data-name="Cherifa Ben Khelil" data-domain="se">
+        <div class="team-card__photo"><img src="team-avatars/ben-khelil.svg" alt="Portrait de Cherifa Ben Khelil"></div>
+        <h3 class="team-card__name">Cherifa Ben Khelil</h3>
+        <p class="team-card__role">// Informatique</p>
+        <p class="team-card__bio">Enseignante-chercheuse en informatique. Spécialisée en algorithmique, structures de données et fondements théoriques de l'informatique.</p>
+        <div class="team-card__tags"><span class="tag">algorithmique</span><span class="tag">théorie</span></div>
+      </article>
+
+    </div>
+
+    <p class="form-meta" id="team-empty" style="display:none;margin-top:24px;">[info] aucun enseignant ne correspond à votre recherche.</p>
+
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container cta-band__grid">
+    <div>
+      <p class="eyebrow">/* ./join-research.sh */</p>
+      <h2 class="cta-band__title" style="margin-top:12px;">Envie de <span class="accent">collaborer</span> avec nos chercheurs ?</h2>
+      <p class="cta-band__lead">Contrats CIFRE, projets industriels, stages de recherche M2 : nos équipes accueillent partenariats et profils curieux.</p>
+    </div>
+    <div class="cta-band__actions">
+      <a href="contact.html" class="btn btn--green-on-dark">Nous écrire</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <img src="ImageEfrei/Logo-Efrei-Blanc.png" alt="EFREI Paris" class="brand__logo">
+        <span class="brand__sub" style="display:block;margin-top:8px;">/ département informatique</span>
+        <p>30+ avenue de la République, 94800 Villejuif. Métro Ligne 7.</p>
+      </div>
+      <div class="site-footer__col">
+        <h4>// navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="formations.html">Formations</a></li>
+          <li><a href="equipe.html">Équipe</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h4>// formations</h4>
+        <ul>
+          <li><a href="formations.html#bachelor">Bachelor</a></li>
+          <li><a href="formations.html#ingenieur">Cycle ingénieur</a></li>
+          <li><a href="formations.html#master">Mastères</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h4>// suivez-nous</h4>
+        <ul>
+          <li><a href="https://www.linkedin.com/school/efrei/posts/?feedView=all" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://www.youtube.com/channel/UCjVwLB9nqhQeyE5KkdhGLgQ" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.instagram.com/efrei_paris/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>$ © 2025 EFREI Paris — Département Informatique</span>
+      <span>Projet TI402 · <a href="a-propos.html">à propos →</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>

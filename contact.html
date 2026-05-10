@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact &amp; Admissions — Département Informatique EFREI</title>
+<meta name="description" content="Coordonnées, formulaire de contact, FAQ et procédure d'admission du département Informatique de l'EFREI Paris.">
+<link rel="stylesheet" href="styles.css">
+<script>(function(){var s=localStorage.getItem('efrei-theme');if(s==='dark')document.documentElement.classList.add('is-dark-pre');}());</script>
+</head>
+<body>
+
+<a class="skip-nav" href="#main">Aller au contenu</a>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a href="index.html" class="brand">
+      <img src="ImageEfrei/Logo-Efrei-Noir-1.png" alt="EFREI Paris" class="brand__logo">
+      <span class="brand__sub">/ département informatique</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <a href="index.html" class="nav__link">Accueil</a>
+      <a href="formations.html" class="nav__link">Formations</a>
+      <a href="equipe.html" class="nav__link">Équipe</a>
+      <a href="contact.html" class="nav__link is-active">Contact</a>
+      <a href="a-propos.html" class="nav__link">À propos</a>
+      <a href="contact.html" class="nav__cta">candidater →</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Basculer le mode d'affichage" title="Mode sombre / clair">
+      <span class="theme-toggle__icon">[●]</span>
+      <span class="theme-toggle__label">dark</span>
+    </button>
+    <button class="burger" id="burger" aria-controls="nav" aria-expanded="false">[ menu ]</button>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="page-head">
+  <div class="container page-head__inner">
+    <p class="page-head__breadcrumb">
+      <a href="index.html">~</a> <span class="sep">/</span> <span>contact</span>
+    </p>
+    <h1 class="page-head__title">Contact <span class="accent">&amp;</span> admissions.</h1>
+    <p class="page-head__lead">
+      Une question, une candidature, une demande de partenariat ? L'équipe administrative répond sous 48h ouvrées.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contact-layout">
+
+    <!-- FORM -->
+    <div data-reveal>
+      <p class="eyebrow">./send-message.sh</p>
+      <h2 class="h-2" style="margin:12px 0 24px;">Écrivez-nous</h2>
+
+      <div class="form-success" id="form-success" role="status">
+        Message envoyé. L'équipe vous répondra sous 48h ouvrées à l'adresse indiquée.
+      </div>
+
+      <form id="contact-form" novalidate>
+        <div class="form-grid">
+          <div class="field">
+            <label for="f-name">Nom complet<span class="req">*</span></label>
+            <input type="text" id="f-name" name="name" required autocomplete="name">
+            <span class="field__error">Indiquez votre nom complet</span>
+          </div>
+          <div class="field">
+            <label for="f-email">Email<span class="req">*</span></label>
+            <input type="email" id="f-email" name="email" required autocomplete="email">
+            <span class="field__error">Adresse email invalide</span>
+          </div>
+          <div class="field">
+            <label for="f-phone">Téléphone</label>
+            <input type="tel" id="f-phone" name="phone" autocomplete="tel">
+            <span class="field__error">Numéro invalide</span>
+          </div>
+          <div class="field">
+            <label for="f-subject">Sujet<span class="req">*</span></label>
+            <select id="f-subject" name="subject" required>
+              <option value="">— choisir —</option>
+              <option value="admission">Admission / Candidature</option>
+              <option value="formations">Information formation</option>
+              <option value="jpo">Journée Portes Ouvertes</option>
+              <option value="entreprise">Partenariat entreprise</option>
+              <option value="autre">Autre</option>
+            </select>
+            <span class="field__error">Sélectionnez un sujet</span>
+          </div>
+          <div class="field field--full">
+            <label for="f-message">Message<span class="req">*</span></label>
+            <textarea id="f-message" name="message" required minlength="20"></textarea>
+            <span class="field__error">Minimum 20 caractères</span>
+          </div>
+          <div class="field field--full">
+            <label style="display:flex;gap:10px;align-items:center;font-family:var(--mono);font-size:12px;color:var(--ink-2);text-transform:none;letter-spacing:normal;">
+              <input type="checkbox" id="f-rgpd" required style="width:auto;margin:0;">
+              <span>J'accepte que mes données soient utilisées pour traiter ma demande (RGPD)<span class="req">*</span></span>
+            </label>
+            <span class="field__error">Acceptez les conditions RGPD</span>
+          </div>
+        </div>
+        <div style="display:flex;gap:12px;align-items:center;margin-top:24px;flex-wrap:wrap;">
+          <button type="submit" class="btn btn--green">Envoyer le message</button>
+          <span class="form-meta" id="form-counter">0 / 20 caractères minimum</span>
+        </div>
+      </form>
+    </div>
+
+    <!-- INFOS DROITE -->
+    <aside data-reveal>
+      <div style="border:1px solid var(--line);padding:24px;background:var(--ivory-2);">
+        <p class="eyebrow">cat coordonnees.txt</p>
+        <h3 class="h-3" style="margin:12px 0 16px;">Département Informatique</h3>
+        <p style="font-family:var(--mono);font-size:13px;line-height:1.85;color:var(--ink-2);">
+          30+ avenue de la République<br>
+          94800 Villejuif, France<br><br>
+          <span style="color:var(--green-ink);">→</span> +33 1 88 28 84 00<br>
+          <span style="color:var(--green-ink);">→</span> info-dpt@efrei.fr
+        </p>
+        <hr style="border:none;border-top:1px dashed var(--line-strong);margin:20px 0;">
+        <p class="eyebrow">// transports</p>
+        <p style="font-family:var(--mono);font-size:13px;line-height:1.7;color:var(--ink-2);margin-top:8px;">
+          Métro Ligne 7 — Villejuif Louis Aragon<br>
+          Métro Ligne 15 (en construction)<br>
+          Bus 162, 172, 180, 185, V1
+        </p>
+      </div>
+
+      <div id="jpo" style="border:1px solid var(--green-ink);padding:24px;background:rgba(13,107,42,0.05);margin-top:24px;">
+        <p class="eyebrow" style="color:var(--green-ink);">prochaine jpo</p>
+        <p class="h-3" style="margin:8px 0 4px;">Samedi 1er février 2026</p>
+        <p style="font-family:var(--mono);font-size:13px;color:var(--ink-2);">10h00 → 17h00 · Campus Villejuif</p>
+        <a href="#jpo" class="btn btn--green btn--sm" style="margin-top:16px;">Réserver ma place</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section--tight" style="background:var(--ivory-2);border-top:1px solid var(--line);">
+  <div class="container" style="max-width:880px;">
+    <div data-reveal>
+      <p class="eyebrow">cat faq.md</p>
+      <h2 class="h-1" style="margin:12px 0 32px;">Questions fréquentes.</h2>
+    </div>
+
+    <div class="faq" id="faq" data-reveal>
+      <div class="faq__item">
+        <button class="faq__q">Comment candidater au département informatique ?</button>
+        <div class="faq__a">Trois voies d'accès : Parcoursup pour le post-bac, Concours Puissance Alpha pour les bachelors, et admissions parallèles pour les Bac+2/+3 via dossier et entretien. Le dépôt se fait en ligne sur le portail EFREI.</div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q">Quel est le coût de la scolarité ?</button>
+        <div class="faq__a">Les frais varient selon la formation (entre 9 000€ et 11 500€/an). L'alternance est gratuite pour l'étudiant — financée par l'entreprise d'accueil et l'OPCO.</div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q">L'alternance est-elle possible ?</button>
+        <div class="faq__a">Oui, sur la plupart de nos cursus à partir de la 3e année. L'EFREI dispose d'une équipe Relations Entreprises dédiée qui accompagne la recherche d'alternance dans 200+ entreprises partenaires.</div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q">Quels sont les débouchés professionnels ?</button>
+        <div class="faq__a">95% d'insertion à 6 mois (promo 2023). Postes-types : Ingénieur DevOps, Data Scientist, Développeur Full-stack, Pentester, Architecte Cloud, Scrum Master. Salaire médian sortie d'école : 42k€.</div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q">Y a-t-il des stages obligatoires ?</button>
+        <div class="faq__a">Oui : 2 mois en L1, 3 mois en L2, 6 mois en cycle ingénieur, et un stage de fin d'études de 6 mois en M2. Au total, plus d'un an d'immersion professionnelle.</div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q">Le diplôme est-il reconnu ?</button>
+        <div class="faq__a">Oui — l'EFREI est accréditée CTI (Commission des Titres d'Ingénieur) et délivre des grades de Master reconnus par l'État. Diplômes inscrits au RNCP.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <img src="ImageEfrei/Logo-Efrei-Blanc.png" alt="EFREI Paris" class="brand__logo">
+        <span class="brand__sub" style="display:block;margin-top:8px;">/ département informatique</span>
+        <p>30+ avenue de la République, 94800 Villejuif. Métro Ligne 7.</p>
+      </div>
+      <div class="site-footer__col">
+        <h4>// navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="formations.html">Formations</a></li>
+          <li><a href="equipe.html">Équipe</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h4>// formations</h4>
+        <ul>
+          <li><a href="formations.html#bachelor">Bachelor</a></li>
+          <li><a href="formations.html#ingenieur">Cycle ingénieur</a></li>
+          <li><a href="formations.html#master">Mastères</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h4>// suivez-nous</h4>
+        <ul>
+          <li><a href="https://www.linkedin.com/school/efrei/posts/?feedView=all" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://www.youtube.com/channel/UCjVwLB9nqhQeyE5KkdhGLgQ" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.instagram.com/efrei_paris/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>$ © 2025 EFREI Paris — Département Informatique</span>
+      <span>Projet TI402 · <a href="a-propos.html">à propos →</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>

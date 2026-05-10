@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Formations — Département Informatique EFREI</title>
+<meta name="description" content="Catalogue des formations du département Informatique de l'EFREI Paris : bachelors, cycle ingénieur, mastères.">
+<link rel="stylesheet" href="styles.css">
+<script>(function(){var s=localStorage.getItem('efrei-theme');if(s==='dark')document.documentElement.classList.add('is-dark-pre');}());</script>
+</head>
+<body>
+
+<a class="skip-nav" href="#main">Aller au contenu</a>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a href="index.html" class="brand">
+      <img src="ImageEfrei/Logo-Efrei-Noir-1.png" alt="EFREI Paris" class="brand__logo">
+      <span class="brand__sub">/ département informatique</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <a href="index.html" class="nav__link">Accueil</a>
+      <a href="formations.html" class="nav__link is-active">Formations</a>
+      <a href="equipe.html" class="nav__link">Équipe</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+      <a href="a-propos.html" class="nav__link">À propos</a>
+      <a href="contact.html" class="nav__cta">candidater →</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Basculer le mode d'affichage" title="Mode sombre / clair">
+      <span class="theme-toggle__icon">[●]</span>
+      <span class="theme-toggle__label">dark</span>
+    </button>
+    <button class="burger" id="burger" aria-controls="nav" aria-expanded="false">[ menu ]</button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ═════ PAGE HEAD ═════ -->
+<section class="page-head">
+  <div class="container page-head__inner">
+    <p class="page-head__breadcrumb">
+      <a href="index.html">~</a> <span class="sep">/</span> <span>formations</span>
+    </p>
+    <h1 class="page-head__title">Formations<span class="accent">.</span></h1>
+    <p class="page-head__lead">
+      Du bachelor au mastère spécialisé, douze cursus pour devenir ingénieur·e en informatique. Pédagogie par projets, alternance disponible, débouchés à 95% à 6 mois.
+    </p>
+  </div>
+</section>
+
+<!-- ═════ ARBORESCENCE + TABLE ═════ -->
+<section class="section">
+  <div class="container">
+
+    <div data-reveal class="formations-layout">
+      <!-- Tree -->
+      <aside class="tree" aria-hidden="true">
+        <div class="tree__line dir">~/formations/</div>
+        <div class="tree__line">├── <span style="color:var(--green-ink);font-weight:600">bachelor/</span></div>
+        <div class="tree__line">│   ├── informatique.md</div>
+        <div class="tree__line">│   ├── cybersecurite.md</div>
+        <div class="tree__line">│   └── dev-web-ia.md</div>
+        <div class="tree__line">├── <span style="color:var(--green-ink);font-weight:600">cycle-ingenieur/</span></div>
+        <div class="tree__line">│   ├── majeure-IT.md</div>
+        <div class="tree__line">│   ├── majeure-data.md</div>
+        <div class="tree__line">│   ├── majeure-cyber.md</div>
+        <div class="tree__line">│   └── majeure-embarqué.md</div>
+        <div class="tree__line">├── <span style="color:var(--green-ink);font-weight:600">mastere/</span></div>
+        <div class="tree__line">│   ├── data-science.md</div>
+        <div class="tree__line">│   ├── cloud-devops.md</div>
+        <div class="tree__line">│   └── ia-applique.md</div>
+        <div class="tree__line dim">└── README.md</div>
+      </aside>
+
+      <!-- Table -->
+      <div>
+        <div class="filters" id="filters" role="tablist" aria-label="Filtrer par niveau">
+          <button class="filter-chip is-active" data-filter="all">tous <span class="filter-chip__count">12</span></button>
+          <button class="filter-chip" data-filter="bachelor">bachelor <span class="filter-chip__count">3</span></button>
+          <button class="filter-chip" data-filter="ing">cycle ingénieur <span class="filter-chip__count">4</span></button>
+          <button class="filter-chip" data-filter="master">mastère <span class="filter-chip__count">3</span></button>
+        </div>
+
+        <table class="form-table" id="form-table">
+          <thead>
+            <tr>
+              <th>Formation</th>
+              <th>Niveau</th>
+              <th>Durée</th>
+              <th>Modalité</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-cat="bachelor" id="bachelor">
+              <td class="col-name" data-label="Formation">Bachelor Informatique<small>Grade de licence — full-stack &amp; data</small></td>
+              <td class="col-tag" data-label="Niveau"><span class="tag tag--bachelor">Bachelor</span></td>
+              <td class="col-mono" data-label="Durée">3 ans</td>
+              <td class="col-mono" data-label="Modalité">Initial / Alternance</td>
+            </tr>
+            <tr data-cat="bachelor">
+              <td class="col-name" data-label="Formation">Bachelor Cybersécurité &amp; Réseaux<small>Pentesting, défense, ops réseaux</small></td>
+              <td class="col-tag" data-label="Niveau"><span class="tag tag--bachelor">Bachelor</span></td>
+              <td class="col-mono" data-label="Durée">3 ans</td>
+              <td class="col-mono" data-label="Modalité">Initial / Alternance</td>
+            </tr>
+            <tr data-cat="bachelor">
+              <td class="col-name" data-label="Formation">Bachelor Dev Web &amp; IA<small>Javascript, Python, ML appliqué</small></td>
+              <td class="col-tag" data-label="Niveau"><span class="tag tag--bachelor">Bachelor</span></td>
+              <td class="col-mono" data-label="Durée">3 ans</td>
+              <td class="col-mono" data-label="Modalité">Initial</td>
+            </tr>
+
+            <tr data-cat="ing" id="ingenieur">
+              <td class="col-name" data-label="Formation">Cycle ingénieur — Information Technology<small>Logiciels &amp; SI</small></td>
+              <td class="col-tag" data-label="Niveau"><span class="tag tag--ing">Ingénieur</span></td>
+              <td class="col-mono" data-label="Durée">5 ans</td>
+              <td class="col-mono" data-label="Modalité">Initial / Alternance</td>
+            </tr>
+            <tr data-cat="ing">
+              <td class="col-name" data-label="Formation">Cycle ingénieur — Data Science<small>Big data, ML/DL, statistique</small></td>
+              <td class="col-tag" data-label="Niveau"><span class="tag tag--ing">Ingénieur</span></td>
+              <td class="col-mono" data-label="Durée">5 ans</td>
+              <td class="col-mono" data-label="Modalité">Initial / Alternance</td>
+            </tr>
+            <tr data-cat="ing">
+              <td class="col-name" data-label="Formation">Cycle ingénieur — Sécurité &amp; Réseaux<small>Cryptographie, audit, SOC</small></td>
+              <td class="col-tag" data-label="Niveau"><span class="tag tag--ing">Ingénieur</span></td>
+              <td class="col-mono" data-label="Durée">5 ans</td>
+              <td class="col-mono" data-label="Modalité">Initial / Alternance</td>
+            </tr>
+            <tr data-cat="ing">
+              <td class="col-name" data-label="Formation">Cycle ingénieur — Systèmes Embarqués<small>IoT, temps réel, hardware</small></td>
+              <td class="col-tag" data-label="Niveau"><span class="tag tag--ing">Ingénieur</span></td>
+              <td class="col-mono" data-label="Durée">5 ans</td>
+              <td class="col-mono" data-label="Modalité">Initial</td>
+            </tr>
+
+            <tr data-cat="master" id="master">
+              <td class="col-name" data-label="Formation">Mastère Data Science<small>Bac+5 — spécialisation industrielle</small></td>
+              <td class="col-tag" data-label="Niveau"><span class="tag tag--master">Mastère</span></td>
+              <td class="col-mono" data-label="Durée">2 ans</td>
+              <td class="col-mono" data-label="Modalité">Alternance</td>
+            </tr>
+            <tr data-cat="master">
+              <td class="col-name" data-label="Formation">Mastère Cloud &amp; DevOps<small>Kubernetes, AWS, GCP</small></td>
+              <td class="col-tag" data-label="Niveau"><span class="tag tag--master">Mastère</span></td>
+              <td class="col-mono" data-label="Durée">2 ans</td>
+              <td class="col-mono" data-label="Modalité">Alternance</td>
+            </tr>
+            <tr data-cat="master">
+              <td class="col-name" data-label="Formation">Mastère IA appliquée<small>NLP, vision, génératif</small></td>
+              <td class="col-tag" data-label="Niveau"><span class="tag tag--master">Mastère</span></td>
+              <td class="col-mono" data-label="Durée">2 ans</td>
+              <td class="col-mono" data-label="Modalité">Alternance</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═════ DÉTAILS PROGRAMME ═════ -->
+<section class="section section--tight" style="background:var(--ivory-2);border-top:1px solid var(--line);">
+  <div class="container">
+    <div data-reveal>
+      <p class="eyebrow">cat programme.md</p>
+      <h2 class="h-1" style="margin-top:12px;">Programme &amp; compétences visées.</h2>
+    </div>
+
+    <div class="pillars__grid" style="margin-top:48px;">
+      <article class="pillar">
+        <p class="pillar__num">// matières principales</p>
+        <h3 class="pillar__title">Tronc technique</h3>
+        <ul class="pillar__list">
+          <li>Algorithmique &amp; structures</li>
+          <li>Bases de données SQL/NoSQL</li>
+          <li>Développement Web &amp; Mobile</li>
+          <li>Systèmes &amp; réseaux</li>
+          <li>Cybersécurité fondamentale</li>
+          <li>IA &amp; Machine Learning</li>
+        </ul>
+      </article>
+      <article class="pillar">
+        <p class="pillar__num">// gestion de projet</p>
+        <h3 class="pillar__title">Compétences métier</h3>
+        <ul class="pillar__list">
+          <li>Méthodes agiles — Scrum</li>
+          <li>Gestion d'équipe technique</li>
+          <li>Cycles produit &amp; UX</li>
+          <li>Communication client</li>
+          <li>Anglais technique</li>
+          <li>Innovation &amp; entrepreneuriat</li>
+        </ul>
+      </article>
+      <article class="pillar">
+        <p class="pillar__num">// débouchés</p>
+        <h3 class="pillar__title">Métiers visés</h3>
+        <ul class="pillar__list">
+          <li>Ingénieur DevOps</li>
+          <li>Data Scientist</li>
+          <li>Développeur Full-stack</li>
+          <li>Pentester / Consultant SI</li>
+          <li>Architecte Cloud</li>
+          <li>Scrum Master</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═════ CTA ═════ -->
+<section class="cta-band">
+  <div class="container cta-band__grid">
+    <div>
+      <p class="eyebrow">/* ./apply.sh */</p>
+      <h2 class="cta-band__title" style="margin-top:12px;">Une question sur <span class="accent">une formation</span> ?</h2>
+      <p class="cta-band__lead">L'équipe pédagogique répond sous 48h ouvrées. Vous pouvez aussi venir nous rencontrer aux Journées Portes Ouvertes.</p>
+    </div>
+    <div class="cta-band__actions">
+      <a href="contact.html" class="btn btn--green-on-dark">Nous contacter</a>
+      <a href="equipe.html" class="btn btn--on-dark">Rencontrer l'équipe</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <img src="ImageEfrei/Logo-Efrei-Blanc.png" alt="EFREI Paris" class="brand__logo">
+        <span class="brand__sub" style="display:block;margin-top:8px;">/ département informatique</span>
+        <p>30+ avenue de la République, 94800 Villejuif. Métro Ligne 7.</p>
+      </div>
+      <div class="site-footer__col">
+        <h4>// navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="formations.html">Formations</a></li>
+          <li><a href="equipe.html">Équipe</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h4>// formations</h4>
+        <ul>
+          <li><a href="formations.html#bachelor">Bachelor</a></li>
+          <li><a href="formations.html#ingenieur">Cycle ingénieur</a></li>
+          <li><a href="formations.html#master">Mastères</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h4>// suivez-nous</h4>
+        <ul>
+          <li><a href="https://www.linkedin.com/school/efrei/posts/?feedView=all" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://www.youtube.com/channel/UCjVwLB9nqhQeyE5KkdhGLgQ" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.instagram.com/efrei_paris/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>$ © 2025 EFREI Paris — Département Informatique</span>
+      <span>Projet TI402 · <a href="a-propos.html">à propos →</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>

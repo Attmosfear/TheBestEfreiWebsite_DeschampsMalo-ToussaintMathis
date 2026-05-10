@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EFREI Paris — Département Informatique</title>
+<meta name="description" content="Site vitrine du département Informatique de l'EFREI Paris. Formations, équipe pédagogique, vie étudiante et contact.">
+<link rel="stylesheet" href="styles.css">
+<script>(function(){var s=localStorage.getItem('efrei-theme');if(s==='dark')document.documentElement.classList.add('is-dark-pre');}());</script>
+</head>
+<body>
+
+<a class="skip-nav" href="#main">Aller au contenu</a>
+
+<!-- ═════ HEADER (commun à toutes les pages) ═════ -->
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a href="index.html" class="brand">
+      <img src="ImageEfrei/Logo-Efrei-Noir-1.png" alt="EFREI Paris" class="brand__logo">
+      <span class="brand__sub">/ département informatique</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <a href="index.html" class="nav__link is-active">Accueil</a>
+      <a href="formations.html" class="nav__link">Formations</a>
+      <a href="equipe.html" class="nav__link">Équipe</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+      <a href="a-propos.html" class="nav__link">À propos</a>
+      <a href="contact.html" class="nav__cta">candidater →</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Basculer le mode d'affichage" title="Mode sombre / clair">
+      <span class="theme-toggle__icon">[●]</span>
+      <span class="theme-toggle__label">dark</span>
+    </button>
+    <button class="burger" id="burger" aria-controls="nav" aria-expanded="false">[ menu ]</button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ═════ HERO TERMINAL ═════ -->
+<section class="hero">
+  <div class="container hero__inner">
+
+    <div class="term-window" aria-hidden="true">
+      <div class="term-window__chrome">
+        <span class="term-window__dot"></span>
+        <span class="term-window__dot"></span>
+        <span class="term-window__dot is-green"></span>
+        <span class="term-window__title">malo@efrei-paris : ~/dept-info</span>
+      </div>
+      <div class="term-window__body" id="term-body">
+        <div><span class="ps">$</span> <span class="cmd">whoami</span></div>
+        <div>département-informatique</div>
+        <div><span class="ps">$</span> <span class="cmd">cat</span> <span class="arg">mission.txt</span></div>
+        <div id="term-typed"></div>
+        <div><span class="ps">$</span> <span class="cursor"></span></div>
+      </div>
+    </div>
+
+    <h1 class="hero__title">
+      Façonner les ingénieurs<br>
+      du <span class="accent">numérique</span> de demain.
+    </h1>
+    <p class="hero__lead">
+      Le département Informatique de l'EFREI Paris forme depuis plus de 30 ans des ingénieurs spécialisés en intelligence artificielle, cybersécurité, data science, cloud et systèmes embarqués. Pédagogie par projets. Campus de Villejuif.
+    </p>
+    <div class="hero__cta">
+      <a href="formations.html" class="btn btn--green-on-dark">Explorer les formations</a>
+      <a href="#chiffres" class="btn btn--on-dark">Notre département</a>
+    </div>
+
+    <div class="hero__meta">
+      <div>
+        <div class="hero__meta-num">12+</div>
+        <div class="hero__meta-label">formations</div>
+      </div>
+      <div>
+        <div class="hero__meta-num">2 000+</div>
+        <div class="hero__meta-label">étudiants</div>
+      </div>
+      <div>
+        <div class="hero__meta-num">95%</div>
+        <div class="hero__meta-label">insertion pro</div>
+      </div>
+      <div>
+        <div class="hero__meta-num">30</div>
+        <div class="hero__meta-label">années</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════ MARQUEE COMPILE STRIP ═════ -->
+<div class="compile-strip" aria-hidden="true">
+  <div class="compile-strip__track">
+    <span><span class="ok">[ok]</span> python · machine-learning</span>
+    <span><span class="ok">[ok]</span> rust · systèmes embarqués</span>
+    <span><span class="ok">[ok]</span> kubernetes · cloud-native</span>
+    <span><span class="ok">[ok]</span> pentesting · cybersécurité</span>
+    <span><span class="ok">[ok]</span> tensorflow · deep-learning</span>
+    <span><span class="ok">[ok]</span> postgresql · big-data</span>
+    <span><span class="ok">[ok]</span> react · web-engineering</span>
+    <span><span class="ok">[ok]</span> docker · devops</span>
+    <!-- répétition pour boucle infinie -->
+    <span><span class="ok">[ok]</span> python · machine-learning</span>
+    <span><span class="ok">[ok]</span> rust · systèmes embarqués</span>
+    <span><span class="ok">[ok]</span> kubernetes · cloud-native</span>
+    <span><span class="ok">[ok]</span> pentesting · cybersécurité</span>
+    <span><span class="ok">[ok]</span> tensorflow · deep-learning</span>
+    <span><span class="ok">[ok]</span> postgresql · big-data</span>
+    <span><span class="ok">[ok]</span> react · web-engineering</span>
+    <span><span class="ok">[ok]</span> docker · devops</span>
+  </div>
+</div>
+
+<!-- ═════ CHIFFRES CLÉS ═════ -->
+<section class="stats" id="chiffres">
+  <div class="stats__grid">
+    <div class="stats__cell">
+      <div class="stats__num" data-count-to="95">0<span class="unit">%</span></div>
+      <div class="stats__label">// satisfaction étudiants</div>
+    </div>
+    <div class="stats__cell">
+      <div class="stats__num" data-count-to="2000">0<span class="unit">+</span></div>
+      <div class="stats__label">// étudiants inscrits</div>
+    </div>
+    <div class="stats__cell">
+      <div class="stats__num" data-count-to="200">0<span class="unit">+</span></div>
+      <div class="stats__label">// partenaires entreprises</div>
+    </div>
+    <div class="stats__cell">
+      <div class="stats__num" data-count-to="40">0<span class="unit">+</span></div>
+      <div class="stats__label">// enseignants-chercheurs</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════ CARROUSEL CAMPUS ═════ -->
+<section class="section">
+  <div class="container">
+    <div data-reveal>
+      <p class="eyebrow">cd /campus-villejuif</p>
+      <h2 class="h-1" style="margin-top:12px;margin-bottom:32px;">Le campus en images</h2>
+    </div>
+
+    <div class="carousel" data-reveal>
+      <div class="carousel__viewport" id="carousel-viewport">
+        <div class="carousel__slide is-active">
+          <img src="ImageEfrei/homepage-presentation-campus-EFREI.jpg" alt="Campus de Villejuif" class="carousel__img">
+          <div class="carousel__caption">
+            <p class="eyebrow">slide 01</p>
+            <p class="title">Campus de Villejuif — cœur de la vie étudiante</p>
+          </div>
+        </div>
+        <div class="carousel__slide">
+          <img src="ImageEfrei/etudiants-cybersecurite-efrei-paris.jpg" alt="Étudiants en amphithéâtre" class="carousel__img">
+          <div class="carousel__caption">
+            <p class="eyebrow">slide 02</p>
+            <p class="title">Amphithéâtres & salles de cours modernes</p>
+          </div>
+        </div>
+        <div class="carousel__slide">
+          <img src="ImageEfrei/etudiantscampusefreifactory-1024x681.jpg" alt="Espace coworking étudiants" class="carousel__img">
+          <div class="carousel__caption">
+            <p class="eyebrow">slide 03</p>
+            <p class="title">Espaces de coworking & projets</p>
+          </div>
+        </div>
+        <div class="carousel__slide">
+          <img src="ImageEfrei/Efrei-reportage-38-1024x683.jpg" alt="Labs robotique et IoT" class="carousel__img">
+          <div class="carousel__caption">
+            <p class="eyebrow">slide 04</p>
+            <p class="title">Labs robotique, IoT & fabrication</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel__dots" id="carousel-dots" role="tablist">
+        <button type="button" class="carousel__dot is-active" data-slide="0" aria-label="Slide 1"></button>
+        <button type="button" class="carousel__dot" data-slide="1" aria-label="Slide 2"></button>
+        <button type="button" class="carousel__dot" data-slide="2" aria-label="Slide 3"></button>
+        <button type="button" class="carousel__dot" data-slide="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel__nav">
+        <button type="button" class="carousel__btn" id="carousel-prev" aria-label="Précédent">←</button>
+        <button type="button" class="carousel__btn" id="carousel-next" aria-label="Suivant">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════ TROIS PILIERS ═════ -->
+<section class="section section--tight" style="background:var(--ivory-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="container">
+    <div data-reveal>
+      <p class="eyebrow">cat README.md</p>
+      <h2 class="h-1" style="margin-top:12px;">Trois piliers du département.</h2>
+    </div>
+
+    <div class="pillars__grid">
+      <article class="pillar" data-reveal>
+        <p class="pillar__num">// 01 — formations</p>
+        <h3 class="pillar__title">Du bachelor au cycle ingénieur</h3>
+        <p class="pillar__body">Un parcours complet, du post-bac au mastère, couvrant tous les métiers de l'ingénierie informatique moderne.</p>
+        <ul class="pillar__list">
+          <li>Bachelor Informatique</li>
+          <li>Bachelor Cybersécurité</li>
+          <li>Cycle Ingénieur — 4 majeures</li>
+          <li>Mastères spécialisés</li>
+        </ul>
+        <a href="formations.html" class="pillar__link">voir le catalogue</a>
+      </article>
+
+      <article class="pillar" data-reveal>
+        <p class="pillar__num">// 02 — recherche</p>
+        <h3 class="pillar__title">Une recherche ancrée dans le terrain</h3>
+        <p class="pillar__body">40+ enseignants-chercheurs publient sur les thématiques qui transforment l'industrie : IA, cyberdéfense, big data, cloud.</p>
+        <ul class="pillar__list">
+          <li>Intelligence Artificielle</li>
+          <li>Cybersécurité offensive</li>
+          <li>Cloud computing &amp; DevOps</li>
+          <li>Systèmes embarqués</li>
+        </ul>
+        <a href="equipe.html" class="pillar__link">rencontrer l'équipe</a>
+      </article>
+
+      <article class="pillar" data-reveal>
+        <p class="pillar__num">// 03 — vie étudiante</p>
+        <h3 class="pillar__title">Une communauté tech vivante</h3>
+        <p class="pillar__body">CTF, robotique, e-sport, hackathons. Des labs ouverts, du matériel pro, et des associations qui font vivre le département au quotidien.</p>
+        <ul class="pillar__list">
+          <li>Club CTF — sécurité</li>
+          <li>Robotique &amp; IoT</li>
+          <li>Hackathons mensuels</li>
+          <li>Alumni — 200+ entreprises</li>
+        </ul>
+        <a href="contact.html" class="pillar__link">candidater</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═════ ACTUALITÉS ═════ -->
+<section class="section">
+  <div class="container">
+    <div data-reveal>
+      <p class="eyebrow">tail -n 5 news.log</p>
+      <h2 class="h-1" style="margin-top:12px;">Actualités &amp; événements.</h2>
+    </div>
+
+    <div class="news__grid">
+      <article class="news__item">
+        <span class="news__date">2024-03-12</span>
+        <span class="news__title">Hackathon IA — 48h de code, 120 étudiants, 15 entreprises partenaires</span>
+        <span class="news__cat">Événement</span>
+      </article>
+      <article class="news__item">
+        <span class="news__date">2024-02-28</span>
+        <span class="news__title">Ouverture des candidatures Mastères 2024–2025</span>
+        <span class="news__cat">Admission</span>
+      </article>
+      <article class="news__item">
+        <span class="news__date">2024-02-14</span>
+        <span class="news__title">Conférence : "Quantum computing : où en est-on ?" — Pr. Lefebvre</span>
+        <span class="news__cat">Recherche</span>
+      </article>
+      <article class="news__item">
+        <span class="news__date">2024-01-15</span>
+        <span class="news__title">Nouveau partenariat avec la Métropole du Grand Paris pour les projets data</span>
+        <span class="news__cat">Partenariat</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═════ TERMINAL INTERACTIF ═════ -->
+<section class="section section--dark" id="terminal">
+  <div class="container">
+    <p class="eyebrow" style="color:var(--green);">/dev/tty — terminal interactif</p>
+    <h2 class="h-1" style="margin:12px 0 24px;color:var(--ivory);">
+      Explore le département <span style="color:var(--green)">en commande.</span>
+    </h2>
+    <p class="lead" style="color:rgba(255,255,255,0.6);margin-bottom:32px;">
+      Tape <code style="color:var(--green);">help</code> pour la liste des commandes. Flèches ↑↓ pour l'historique. Tab pour l'autocomplétion.
+    </p>
+
+    <div class="iterm" id="iterm">
+      <div class="iterm__chrome">
+        <span class="term-window__dot"></span>
+        <span class="term-window__dot"></span>
+        <span class="term-window__dot is-green"></span>
+        <span style="margin-left:8px;">visitor@efrei-paris : ~/dept-info</span>
+      </div>
+      <div class="iterm__output" id="iterm-output" aria-live="polite"></div>
+      <form class="iterm__input-line" id="iterm-form" autocomplete="off">
+        <span class="iterm__prompt">visitor@efrei:~$</span>
+        <input type="text" id="iterm-input" class="iterm__input"
+               aria-label="Tapez une commande"
+               spellcheck="false">
+        <span class="cursor" aria-hidden="true"></span>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═════ CTA BAND ═════ -->
+<section class="cta-band">
+  <div class="container cta-band__grid">
+    <div data-reveal>
+      <p class="eyebrow">/* ./join-us.sh */</p>
+      <h2 class="cta-band__title" style="margin-top:12px;">Prêt·e à rejoindre <span class="accent">le département</span> ?</h2>
+      <p class="cta-band__lead">Journées portes ouvertes, contact direct avec l'équipe pédagogique, dossier de candidature en ligne. On vous accompagne à chaque étape.</p>
+    </div>
+    <div class="cta-band__actions" data-reveal>
+      <a href="contact.html" class="btn btn--green-on-dark">Candidater maintenant</a>
+      <a href="contact.html#jpo" class="btn btn--on-dark">Réserver une JPO</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ═════ FOOTER (commun à toutes les pages) ═════ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <img src="ImageEfrei/Logo-Efrei-Blanc.png" alt="EFREI Paris" class="brand__logo">
+        <span class="brand__sub" style="display:block;margin-top:8px;">/ département informatique</span>
+        <p>30+ avenue de la République, 94800 Villejuif. Métro Ligne 7 (Villejuif Louis Aragon).</p>
+      </div>
+      <div class="site-footer__col">
+        <h4>// navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="formations.html">Formations</a></li>
+          <li><a href="equipe.html">Équipe</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h4>// formations</h4>
+        <ul>
+          <li><a href="formations.html#bachelor">Bachelor</a></li>
+          <li><a href="formations.html#ingenieur">Cycle ingénieur</a></li>
+          <li><a href="formations.html#master">Mastères</a></li>
+          <li><a href="formations.html">Voir tout</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h4>// suivez-nous</h4>
+        <ul>
+          <li><a href="https://www.linkedin.com/school/efrei/posts/?feedView=all" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://www.youtube.com/channel/UCjVwLB9nqhQeyE5KkdhGLgQ" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.instagram.com/efrei_paris/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>$ © 2025 EFREI Paris — Département Informatique</span>
+      <span>Projet TI402 · <a href="a-propos.html">à propos →</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
